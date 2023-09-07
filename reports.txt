@@ -1,1983 +1,462 @@
 Test::setUp()
 Handler()
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementB
-incrementA
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementA
-incrementB
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-
+invariant_A():
+             :             handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :     block.timestamp:1
+             :        block.number:1
+             :             counter:0
+             : handler.t().counter:0
+             :       handler.t().a:0
+             :       handler.t().b:0
+             :     handler.counter:0
+             :           handler.a:0
+             :           handler.b:0
+invariant_A():
+             :             handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :     block.timestamp:1
+             :        block.number:1
+             :             counter:0
+             : handler.t().counter:0
+             :       handler.t().a:0
+             :       handler.t().b:0
+             :     handler.counter:0
+             :           handler.a:0
+             :           handler.b:0
 [handler] skip by 1 day
-
-
+f1( 265 )
+             :           handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :   block.timestamp:86401
+             :      block.number:1
+             : handler.t.counter:0
+             :       handler.t.a:0
+             :       handler.t.b:0
+             :   handler.counter:0
+             :         handler.a:0
+             :         handler.b:0
+invariant_A():
+             :             handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :     block.timestamp:1
+             :        block.number:1
+             :             counter:0
+             : handler.t().counter:0
+             :       handler.t().a:0
+             :       handler.t().b:0
+             :     handler.counter:0
+             :           handler.a:0
+             :           handler.b:0
+incrementA()
+             :           handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :   block.timestamp:1
+             :      block.number:1
+             : handler.t.counter:1
+             :       handler.t.a:1
+             :       handler.t.b:0
+             :         handler.a:1
+             :   handler.counter:1
+             :         handler.a:1
+             :         handler.b:0
+invariant_A():
+             :             handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :     block.timestamp:1
+             :        block.number:1
+             :             counter:0
+             : handler.t().counter:1
+             :       handler.t().a:1
+             :       handler.t().b:0
+             :     handler.counter:1
+             :           handler.a:1
+             :           handler.b:0
+incrementB()
+             :           handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :   block.timestamp:1
+             :      block.number:1
+             : handler.t.counter:2
+             :       handler.t.a:1
+             :       handler.t.b:1
+             :   handler.counter:2
+             :         handler.a:1
+             :         handler.b:1
+invariant_A():
+             :             handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :     block.timestamp:1
+             :        block.number:1
+             :             counter:0
+             : handler.t().counter:2
+             :       handler.t().a:1
+             :       handler.t().b:1
+             :     handler.counter:2
+             :           handler.a:1
+             :           handler.b:1
+incrementA()
+             :           handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :   block.timestamp:1
+             :      block.number:1
+             : handler.t.counter:3
+             :       handler.t.a:2
+             :       handler.t.b:1
+             :         handler.a:2
+             :   handler.counter:3
+             :         handler.a:2
+             :         handler.b:1
+invariant_A():
+             :             handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :     block.timestamp:1
+             :        block.number:1
+             :             counter:0
+             : handler.t().counter:3
+             :       handler.t().a:2
+             :       handler.t().b:1
+             :     handler.counter:3
+             :           handler.a:2
+             :           handler.b:1
 [handler] skip by 1 day
-
-mintV2( 1461501637330902918203684832716283019655932542975 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-mintV2( 260007061615644993 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementB
-incrementA
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-
+f1( 0 )
+             :           handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :   block.timestamp:86401
+             :      block.number:1
+             : handler.t.counter:3
+             :       handler.t.a:2
+             :       handler.t.b:1
+             :   handler.counter:3
+             :         handler.a:2
+             :         handler.b:1
+invariant_A():
+             :             handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :     block.timestamp:1
+             :        block.number:1
+             :             counter:0
+             : handler.t().counter:3
+             :       handler.t().a:2
+             :       handler.t().b:1
+             :     handler.counter:3
+             :           handler.a:2
+             :           handler.b:1
 [handler] skip by 1 day
-
+f1( 1088 )
+             :           handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :   block.timestamp:86401
+             :      block.number:1
+             : handler.t.counter:3
+             :       handler.t.a:2
+             :       handler.t.b:1
+             :   handler.counter:3
+             :         handler.a:2
+             :         handler.b:1
+invariant_A():
+             :             handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :     block.timestamp:1
+             :        block.number:1
+             :             counter:0
+             : handler.t().counter:3
+             :       handler.t().a:2
+             :       handler.t().b:1
+             :     handler.counter:3
+             :           handler.a:2
+             :           handler.b:1
 [modifier] useActor
-
 [handler] skip by 1 day
-
-mintV2( 242197783504818565 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-swapV2( 1440 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementB
-incrementA
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-
-[handler] skip by 1 day
-
-mintV2( 115792089237316195423570985008687907853269984665640564039457584007913129639932 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-mintV2( 251390114623076641084401041708715452509918844204 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementB
-incrementA
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
+f2( 3 )
+             :           handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :   block.timestamp:86401
+             :      block.number:1
+             : handler.t.counter:3
+             :       handler.t.a:2
+             :       handler.t.b:1
+             :   handler.counter:3
+             :         handler.a:2
+             :         handler.b:1
+invariant_A():
+             :             handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :     block.timestamp:1
+             :        block.number:1
+             :             counter:0
+             : handler.t().counter:3
+             :       handler.t().a:2
+             :       handler.t().b:1
+             :     handler.counter:3
+             :           handler.a:2
+             :           handler.b:1
+f1( 115792089237316195423570985008687907853269984665640564039457584007913129639934 )
+             :           handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :   block.timestamp:1
+             :      block.number:1
+             : handler.t.counter:3
+             :       handler.t.a:2
+             :       handler.t.b:1
+             :   handler.counter:3
+             :         handler.a:2
+             :         handler.b:1
+invariant_A():
+             :             handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :     block.timestamp:1
+             :        block.number:1
+             :             counter:0
+             : handler.t().counter:3
+             :       handler.t().a:2
+             :       handler.t().b:1
+             :     handler.counter:3
+             :           handler.a:2
+             :           handler.b:1
+incrementB()
+             :           handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :   block.timestamp:1
+             :      block.number:1
+             : handler.t.counter:4
+             :       handler.t.a:2
+             :       handler.t.b:2
+             :   handler.counter:4
+             :         handler.a:2
+             :         handler.b:2
+invariant_A():
+             :             handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :     block.timestamp:1
+             :        block.number:1
+             :             counter:0
+             : handler.t().counter:4
+             :       handler.t().a:2
+             :       handler.t().b:2
+             :     handler.counter:4
+             :           handler.a:2
+             :           handler.b:2
 [modifier] useActor
-mintV2( 115792089237316195423570985008687907853269984665640564039457584007913129639935 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-
 [handler] skip by 1 day
-
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementB
-swapV2( 2 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-incrementA
+f2( 5893 )
+             :           handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :   block.timestamp:86401
+             :      block.number:1
+             : handler.t.counter:4
+             :       handler.t.a:2
+             :       handler.t.b:2
+             :   handler.counter:4
+             :         handler.a:2
+             :         handler.b:2
+invariant_A():
+             :             handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :     block.timestamp:1
+             :        block.number:1
+             :             counter:0
+             : handler.t().counter:4
+             :       handler.t().a:2
+             :       handler.t().b:2
+             :     handler.counter:4
+             :           handler.a:2
+             :           handler.b:2
+[handler] skip by 1 day
+f1( 265 )
+             :           handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :   block.timestamp:86401
+             :      block.number:1
+             : handler.t.counter:0
+             :       handler.t.a:0
+             :       handler.t.b:0
+             :   handler.counter:0
+             :         handler.a:0
+             :         handler.b:0
+invariant_A():
+             :             handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :     block.timestamp:86401
+             :        block.number:1
+             :             counter:0
+             : handler.t().counter:0
+             :       handler.t().a:0
+             :       handler.t().b:0
+             :     handler.counter:0
+             :           handler.a:0
+             :           handler.b:0
+incrementA()
+             :           handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :   block.timestamp:86401
+             :      block.number:1
+             : handler.t.counter:1
+             :       handler.t.a:1
+             :       handler.t.b:0
+             :         handler.a:1
+             :   handler.counter:1
+             :         handler.a:1
+             :         handler.b:0
+invariant_A():
+             :             handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :     block.timestamp:86401
+             :        block.number:1
+             :             counter:0
+             : handler.t().counter:1
+             :       handler.t().a:1
+             :       handler.t().b:0
+             :     handler.counter:1
+             :           handler.a:1
+             :           handler.b:0
+incrementB()
+             :           handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :   block.timestamp:86401
+             :      block.number:1
+             : handler.t.counter:2
+             :       handler.t.a:1
+             :       handler.t.b:1
+             :   handler.counter:2
+             :         handler.a:1
+             :         handler.b:1
+invariant_A():
+             :             handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :     block.timestamp:86401
+             :        block.number:1
+             :             counter:0
+             : handler.t().counter:2
+             :       handler.t().a:1
+             :       handler.t().b:1
+             :     handler.counter:2
+             :           handler.a:1
+             :           handler.b:1
+incrementA()
+             :           handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :   block.timestamp:86401
+             :      block.number:1
+             : handler.t.counter:3
+             :       handler.t.a:2
+             :       handler.t.b:1
+             :         handler.a:2
+             :   handler.counter:3
+             :         handler.a:2
+             :         handler.b:1
+invariant_A():
+             :             handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :     block.timestamp:86401
+             :        block.number:1
+             :             counter:0
+             : handler.t().counter:3
+             :       handler.t().a:2
+             :       handler.t().b:1
+             :     handler.counter:3
+             :           handler.a:2
+             :           handler.b:1
+[handler] skip by 1 day
+f1( 0 )
+             :           handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :   block.timestamp:172801
+             :      block.number:1
+             : handler.t.counter:3
+             :       handler.t.a:2
+             :       handler.t.b:1
+             :   handler.counter:3
+             :         handler.a:2
+             :         handler.b:1
+invariant_A():
+             :             handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :     block.timestamp:172801
+             :        block.number:1
+             :             counter:0
+             : handler.t().counter:3
+             :       handler.t().a:2
+             :       handler.t().b:1
+             :     handler.counter:3
+             :           handler.a:2
+             :           handler.b:1
+[handler] skip by 1 day
+f1( 1088 )
+             :           handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :   block.timestamp:259201
+             :      block.number:1
+             : handler.t.counter:3
+             :       handler.t.a:2
+             :       handler.t.b:1
+             :   handler.counter:3
+             :         handler.a:2
+             :         handler.b:1
+invariant_A():
+             :             handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :     block.timestamp:259201
+             :        block.number:1
+             :             counter:0
+             : handler.t().counter:3
+             :       handler.t().a:2
+             :       handler.t().b:1
+             :     handler.counter:3
+             :           handler.a:2
+             :           handler.b:1
 [modifier] useActor
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-
 [handler] skip by 1 day
-
-
-[handler] skip by 1 day
-
-swapV2( 862 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-mintV2( 683 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementB
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementA
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
+f2( 3 )
+             :           handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :   block.timestamp:345601
+             :      block.number:1
+             : handler.t.counter:3
+             :       handler.t.a:2
+             :       handler.t.b:1
+             :   handler.counter:3
+             :         handler.a:2
+             :         handler.b:1
+invariant_A():
+             :             handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :     block.timestamp:345601
+             :        block.number:1
+             :             counter:0
+             : handler.t().counter:3
+             :       handler.t().a:2
+             :       handler.t().b:1
+             :     handler.counter:3
+             :           handler.a:2
+             :           handler.b:1
+f1( 115792089237316195423570985008687907853269984665640564039457584007913129639934 )
+             :           handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :   block.timestamp:345601
+             :      block.number:1
+             : handler.t.counter:3
+             :       handler.t.a:2
+             :       handler.t.b:1
+             :   handler.counter:3
+             :         handler.a:2
+             :         handler.b:1
+invariant_A():
+             :             handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :     block.timestamp:345601
+             :        block.number:1
+             :             counter:0
+             : handler.t().counter:3
+             :       handler.t().a:2
+             :       handler.t().b:1
+             :     handler.counter:3
+             :           handler.a:2
+             :           handler.b:1
+incrementB()
+             :           handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :   block.timestamp:345601
+             :      block.number:1
+             : handler.t.counter:4
+             :       handler.t.a:2
+             :       handler.t.b:2
+             :   handler.counter:4
+             :         handler.a:2
+             :         handler.b:2
+invariant_A():
+             :             handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :     block.timestamp:345601
+             :        block.number:1
+             :             counter:0
+             : handler.t().counter:4
+             :       handler.t().a:2
+             :       handler.t().b:2
+             :     handler.counter:4
+             :           handler.a:2
+             :           handler.b:2
 [modifier] useActor
-
 [handler] skip by 1 day
-
-[modifier] useActor
-swapV2( 8430 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-swapV2( 115792089237316195423570985008687907853269984665640564039457584007913129639933 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementB
-incrementA
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-[modifier] useActor
-[modifier] useActor
-
-[handler] skip by 1 day
-
-
-[handler] skip by 1 day
-
-swapV2( 142 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-swapV2( 8147 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementB
-incrementA
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-[modifier] useActor
-[modifier] useActor
-
-[handler] skip by 1 day
-
-
-[handler] skip by 1 day
-
-swapV2( 4184 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-swapV2( 2655873422947409238662372884050454825173306242396357095 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementB
-incrementA
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-mintV2( 115792089237316195423570985008687907853269984665640564039457584007913129639934 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-[modifier] useActor
-
-[handler] skip by 1 day
-
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-swapV2( 1316 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementA
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-[modifier] useActor
-incrementB
-
-[handler] skip by 1 day
-
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-swapV2( 79228162514264337593543950335 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-
-[handler] skip by 1 day
-
-mintV2( 689 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementA
-incrementB
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-
-[handler] skip by 1 day
-
-mintV2( 995817033784657577716458874234050281976146425506718448 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-[modifier] useActor
-
-[handler] skip by 1 day
-
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementA
-swapV2( 47357095873714752740774273858598 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-
-[handler] skip by 1 day
-
-incrementB
-mintV2( 37927084536983537179166 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-mintV2( 115792089237316195423570985008687907853269984665640564039457584007913129639932 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementA
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-incrementB
-[modifier] useActor
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-
-[handler] skip by 1 day
-
-
-[handler] skip by 1 day
-
-mintV2( 3046 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-swapV2( 0 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementA
-incrementB
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-[modifier] useActor
-[modifier] useActor
-
-[handler] skip by 1 day
-
-swapV2( 115792089237316195423570985008687907853269984665640564039457584007913129639934 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-swapV2( 6638 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementA
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-incrementB
-[modifier] useActor
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-
-[handler] skip by 1 day
-
-mintV2( 115792089237316195423570985008687907853269984665640564039457584007913129639935 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-swapV2( 1314 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementB
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-incrementA
-
-[handler] skip by 1 day
-
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-[modifier] useActor
-mintV2( 495790613315 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-
-[handler] skip by 1 day
-
-swapV2( 2305984547254974 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementB
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementA
-
-[handler] skip by 1 day
-
-mintV2( 416171 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-
-[handler] skip by 1 day
-
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-mintV2( 4455 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementB
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-
-[handler] skip by 1 day
-
-incrementA
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-mintV2( 9732 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-
-[handler] skip by 1 day
-
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementB
-mintV2( 137795883117376573155022824988246707370 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-incrementA
-[modifier] useActor
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-swapV2( 115792089237316195423570985008687907853269984665640564039457584007913129639935 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-
-[handler] skip by 1 day
-
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementB
-mintV2( 5079 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementA
-mintV2( 115792089237316195423570985008687907853269984665640564039457584007913129639933 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-
-[handler] skip by 1 day
-
-incrementB
-mintV2( 0 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-[modifier] useActor
-
-[handler] skip by 1 day
-
-incrementA
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-swapV2( 920 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-mintV2( 115792089237316195423570985008687907853269984665640564039457584007913129639933 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementB
-incrementA
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-[modifier] useActor
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-[modifier] useActor
-
-[handler] skip by 1 day
-
-
-[handler] skip by 1 day
-
-swapV2( 2196348472056625 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-swapV2( 2 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementB
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-incrementA
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-[modifier] useActor
-
-[handler] skip by 1 day
-
-
-[handler] skip by 1 day
-
-mintV2( 133827862047820 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-swapV2( 7041 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementA
-incrementB
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-
-[handler] skip by 1 day
-
-[modifier] useActor
-
-[handler] skip by 1 day
-
-mintV2( 76017638495544932508086835917350719122375731 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-swapV2( 7747 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementA
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-incrementB
-[modifier] useActor
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-
-[handler] skip by 1 day
-
-
-[handler] skip by 1 day
-
-swapV2( 2 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-mintV2( 200889212797862296061748907529617984107789082114401232115812975355710 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementA
-incrementB
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-
-[handler] skip by 1 day
-
-
-[handler] skip by 1 day
-
-mintV2( 6937386992896567978580141850033183856993033244282320759144368097775889932 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-mintV2( 3 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementB
-incrementA
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-
-[handler] skip by 1 day
-
-[modifier] useActor
-
-[handler] skip by 1 day
-
-mintV2( 1516658 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-swapV2( 4209711801956705872085 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementB
-incrementA
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-
-[handler] skip by 1 day
-
-mintV2( 1391021383548645 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-[modifier] useActor
-
-[handler] skip by 1 day
-
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementB
-swapV2( 3129 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-[modifier] useActor
-incrementA
-swapV2( 46529144392117707452946260303848603952187628831689540306122340668716214558863 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-[modifier] useActor
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-
-[handler] skip by 1 day
-
-incrementB
-swapV2( 3 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-[modifier] useActor
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-
-[handler] skip by 1 day
-
-incrementA
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-swapV2( 12866383360942065658396618004017496254892037679912250509373951981283 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-
-[handler] skip by 1 day
-
-mintV2( 1 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementB
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-incrementA
-[modifier] useActor
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-
-[handler] skip by 1 day
-
-swapV2( 920 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-mintV2( 115792089237316195423570985008687907853269984665640564039457584007913129639933 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementA
-incrementB
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:1
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-[modifier] useActor
-[modifier] useActor
-
-[handler] skip by 1 day
-
-
-[handler] skip by 1 day
-
-swapV2( 2196348472056625 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:172801
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-swapV2( 2 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:172801
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementA
-incrementB
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:86401
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:172801
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-[modifier] useActor
-
-[handler] skip by 1 day
-
-
-[handler] skip by 1 day
-
-mintV2( 133827862047820 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:172801
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-swapV2( 7041 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:259201
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:172801
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementA
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:259201
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementB
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:172801
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:259201
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-
-[handler] skip by 1 day
-
-[modifier] useActor
-mintV2( 76017638495544932508086835917350719122375731 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:259201
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:259201
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-
-[handler] skip by 1 day
-
-swapV2( 7747 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:345601
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementA
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:345601
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:259201
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-incrementB
-[modifier] useActor
-
-[handler] skip by 1 day
-
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:345601
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-
-[handler] skip by 1 day
-
-swapV2( 2 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:345601
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-mintV2( 200889212797862296061748907529617984107789082114401232115812975355710 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:432001
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:345601
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:432001
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementA
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:345601
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-incrementB
-
-[handler] skip by 1 day
-
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:432001
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-mintV2( 6937386992896567978580141850033183856993033244282320759144368097775889932 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:432001
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-
-[handler] skip by 1 day
-
-mintV2( 3 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:518401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:432001
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:518401
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementA
-incrementB
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:432001
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:518401
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-[modifier] useActor
-
-[handler] skip by 1 day
-
-
-[handler] skip by 1 day
-
-mintV2( 1516658 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:604801
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-swapV2( 4209711801956705872085 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:518401
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:518401
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:604801
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementA
-incrementB
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:604801
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:518401
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-
-[handler] skip by 1 day
-
-[modifier] useActor
-
-[handler] skip by 1 day
-
-mintV2( 1391021383548645 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:691201
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:691201
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-swapV2( 3129 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:604801
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementB
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:604801
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementA
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:691201
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-[modifier] useActor
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:604801
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-swapV2( 46529144392117707452946260303848603952187628831689540306122340668716214558863 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:691201
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-[modifier] useActor
-
-[handler] skip by 1 day
-
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:691201
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-swapV2( 3 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:691201
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementB
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:691201
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:691201
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-[modifier] useActor
-incrementA
-
-[handler] skip by 1 day
-
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:691201
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
-swapV2( 12866383360942065658396618004017496254892037679912250509373951981283 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:777601
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-
-[handler] skip by 1 day
-
-invariant_B(): [pre]
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:777601
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-mintV2( 1 )
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:777601
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-incrementB
-invariant_A(): [pre]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:777601
-             :         nonce:0
-             : handler.nonce:0
-             :     handler.a:0
-             :     handler.b:0
-invariant_B(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:777601
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:0
-             :     handler.b:1
-incrementA
-invariant_A(): [post]:
-             :       handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
-             :     timestamp:777601
-             :         nonce:1
-             : handler.nonce:1
-             :     handler.a:1
-             :     handler.b:0
+f2( 5893 )
+             :           handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :   block.timestamp:432001
+             :      block.number:1
+             : handler.t.counter:4
+             :       handler.t.a:2
+             :       handler.t.b:2
+             :   handler.counter:4
+             :         handler.a:2
+             :         handler.b:2
+invariant_A():
+             :             handler:0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f
+             :     block.timestamp:432001
+             :        block.number:1
+             :             counter:0
+             : handler.t().counter:4
+             :       handler.t().a:2
+             :       handler.t().b:2
+             :     handler.counter:4
+             :           handler.a:2
+             :           handler.b:2
